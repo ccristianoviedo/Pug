@@ -1,0 +1,13 @@
+html 
+    head         
+    body
+        table(style="width:800px; background-color: red; border: black solid;item-aling: center")
+            tr 
+                th="PRODUCTO"
+                th="PRECIO"
+                th="IMAGEN"
+                each dat in datos
+                    tr
+                        td=dat.producto
+                        td=dat.precio
+                        td: img(src=dat.url, alt="")
